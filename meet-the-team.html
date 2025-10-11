@@ -9,65 +9,92 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
     <body>
-        <header-template></header-template>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">CWC Generator Project</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="project-description.html">Project Description</a></li>
+              <li class="nav-item"><a class="nav-link active" href="meet-the-team.html">Meet The Team</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="documents.html">Documents</a></li>
+              <li class="nav-item"><a class="nav-link" href="support-us.html">Support Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <header class="py-5" style="background-image: url('./assets/images/backgrounds/engineering-building.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+            <div class="text-center my-5">
+                <h1 class="text-white fs-3 fw-bolder">Team Members</h1>
+                <p class="text-white mb-0">Meet the CWC Generator Team!</p>
+            </div>
+      </header>
+
         <!-- Content section-->
         <section class="py-5">
-            <div class="container my-5">
-                <div class="row justify-content-center">
-                    <div class="text-center my-5">
-                        <h2>Christian Brown</h2>
-                        <p class="lead">CAD &amp; Test Engineer</p>
-                        <img class="img-fluid rounded-circle mb-4" src="images/people/christian-brown.JPG" alt="..." />
-                        <!-- <p class="mb-0">Something about them...</p> -->
-                        <p class="mb-0">Email: <a href=mailto:"cb3388@nau.edu">cb3388@nau.edu</a></p>
-                        <p class="mb-0">LinkedIn (In progress)</p>
-                        <p class="mb-0"><a target="_blank" href="documents/resumes/cb.pdf">Resume</a></p>
+            <div class="container my-5 text-center">
+                <div class="row justify-content-center mb-5">
+                    
+                    <div class="col-md-3 col-sm-6 mb-5">
+                    <h2>Christian Brown</h2>
+                    <p class="lead">CAD & Test Engineer</p>
+                    <img class="rounded-circle mb-4 img-fluid" src="./assets/images/people/christian-brown.JPG" alt="Portrait of Christian Brown" />
+                    <p class="mb-0"><a href="mailto:cb3388@nau.edu">cb3388@nau.edu</a></p>
+                    <p class="mb-0"><a href="https://www.linkedin.com/in/brownchristian2001">LinkedIn</a></p>
+                    <p class="mb-0"><a target="_blank" href="./assets/documents/resumes/cb-resume.pdf">Resume</a></p>
                     </div>
 
-                    <div class="text-center my-5">
-                        <h2>Naomi Echo</h2>
-                        <p class="lead">Manufacturing &amp; Project Engineer</p>
-						<img class="img-fluid rounded-circle mb-4" src="images/people/default.jpg" alt="Picture of Naomi Echo" />
-                      	<!-- <p class="mb-0">Something about them...</p> -->
-						<p class="mb-0">Email: <a href=mailto:"nre53@nau.edu">nre53@nau.edu</a></p>
-						<p class="mb-0">LinkedIn (In progress)</p>
-						<p class="mb-0">Resume (In progress)</p>
+                    <div class="col-md-3 col-sm-6 mb-5">
+                    <h2>Naomi Echo</h2>
+                    <p class="lead">Manufacturing & Project Engineer</p>
+                    <img class="rounded-circle mb-4 img-fluid" src="./assets/images/people/default.jpg" alt="Portrait of Naomi Echo" />
+                    <p class="mb-0"><a href="mailto:nre53@nau.edu">nre53@nau.edu</a></p>
+                    <p class="mb-0"><a href="https://www.linkedin.com/in/naomi-echo-257118257">LinkedIn</a></p>
+                    <p class="mb-0"><a target="_blank" href="./assets/documents/resumes/nre-resume.pdf">Resume</a></p>
                     </div>
 
-                    <div class="text-center my-5">
+                </div>
+                <div class="row justify-content-center mb-5">
+
+                    <div class="col-md-3 col-sm-6 mb-5">
                         <h2>Alonso Garcia</h2>
-                        <p class="lead">Manufacturing &amp; CAD Engineer</p>
-						<img class="img-fluid rounded-circle mb-4" src="images/people/alonso-garcia.jpg" alt="..." />
-                      	<!-- <p class="mb-0">I like tortles</p> -->
-						<p class="mb-0">Email: <a href=mailto:"abg287@nau.edu">abg287@nau.edu</a></p>
-						<p class="mb-0"><a href="https://www.linkedin.com/in/garciaalonso">LinkedIn</a></p>
-						<p class="mb-0"><a target="_blank" href="documents/resumes/abg.pdf">Resume</a></p>
+                        <p class="lead">Manufacturing & CAD Engineer</p>
+                        <img class="rounded-circle mb-4 img-fluid" src="./assets/images/people/alonso-garcia.jpg" alt="Portrait of Alonso Garcia" />
+                        <p class="mb-0"><a href="mailto:abg287@nau.edu">abg287@nau.edu</a></p>
+                        <p class="mb-0"><a href="https://www.linkedin.com/in/garciaalonso">LinkedIn</a></p>
+                        <p class="mb-0"><a target="_blank" href="./assets/documents/resumes/abg-resume.pdf">Resume</a></p>
                     </div>
 
-                    <div class="text-center my-5">
+                    <div class="col-md-3 col-sm-6 mb-5">
                         <h2>Javan Jake</h2>
-                        <p class="lead">Financial Manager &amp; Test Engineer</p>
-						<img class="img-fluid rounded-circle mb-4" src="images/people/javan-jake.jpeg" alt="..." />
-                      	<!-- <p class="mb-0">Something about them...</p> -->
-						<p class="mb-0">Email: <a href=mailto:"jwj73@nau.edu">jwj73@nau.edu</a></p>
-						<p class="mb-0"><a href="https://www.linkedin.com/in/javan-jake">LinkedIn</a></p>
-						<p class="mb-0"><a target="_blank" href="documents/resumes/jwj.pdf">Resume</a></p>
+                        <p class="lead">Financial Manager & Test Engineer</p>
+                        <img class="rounded-circle mb-4 img-fluid" src="./assets/images/people/javan-jake.jpeg" alt="Portrait of Javan Jake" />
+                        <p class="mb-0"><a href="mailto:jwj73@nau.edu">jwj73@nau.edu</a></p>
+                        <p class="mb-0"><a href="https://www.linkedin.com/in/javan-jake">LinkedIn</a></p>
+                        <p class="mb-0"><a target="_blank" href="./assets/documents/resumes/jwj-resume.pdf">Resume</a></p>
                     </div>
 
-                    <div class="text-center my-5">
+                </div>
+                <div class="row justify-content-center mb-5">
+
+                    <div class="col-md-3 col-sm-6 mb-5">
                         <h2>Kaitlyn Redman</h2>
                         <p class="lead">Logistics Manager</p>
-						<img class="img-fluid rounded-circle mb-4" src="images/people/kaitlyn-redman.jpg" alt="..." />
-                      	<!-- <p class="mb-0">Something about them...</p> -->
-						<p class="mb-0">Email: <a href=mailto:"kpr77@nau.edu">kpr77@nau.edu</a></p>
-						<p class="mb-0"><a href="https://www.linkedin.com/in/kaitlyn-redman-61564826b/">LinkedIn</a></p>
-						<p class="mb-0"><a target="_blank" href="documents/resumes/kpr.pdf">Resume</a></p>
+                        <img class="rounded-circle mb-4 img-fluid" src="./assets/images/people/kaitlyn-redman.jpg" alt="Portrait of Kaitlyn Redman" />
+                        <p class="mb-0"><a href="mailto:kpr77@nau.edu">kpr77@nau.edu</a></p>
+                        <p class="mb-0"><a href="https://www.linkedin.com/in/kaitlyn-redman-61564826b/">LinkedIn</a></p>
+                        <p class="mb-0"><a target="_blank" href="./assets/documents/resumes/kpr-resume.pdf">Resume</a></p>
                     </div>
                 </div>
             </div>
+
         </section>
 		<footer-template></footer-template>
         <script src="js/scripts.js"></script>
